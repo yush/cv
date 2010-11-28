@@ -1,0 +1,149 @@
+% !TEX encoding = UTF-8 Unicode
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[12pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.83]{geometry}
+\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+\addtolength{\textheight }{2cm}
+%\addtolength{\voffset }{2cm}
+
+\renewcommand \labelitemi{}
+\renewcommand \labelitemii{$\bullet$}
+\AtBeginDocument{\setlength{\maketitlenamewidth}{5cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Cl\'ement}
+\familyname{Oury}
+\title{D\'eveloppeur Web}               % optional, remove the line if not wanted
+\address{22, rue des Lilas d'Espagne}{92400 Courbevoie}    % optional, remove the line if not wanted
+\mobile{0683259788}                    % optional, remove the line if not wanted
+\email{oury@itbfr.org}                      % optional, remove the line if not wanted
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Exp\'erience professionnelle}
+\subsection{Informatique}
+\cventry{2008--aujourd'hui}{Responsable de Projets Informatiques}{\newline Institut Technique de la Betterave}{Paris}{}{
+ D\'eveloppement d'une application Web de saisie des observations exp\'erimentales . Utilisation de PHP et de la biblioth\`eque Javascript Dojo. Cr\'eation de formulaires de saisies dynamiques et communication avec un site partenaire \`a l'aide de Web Services. L'acces au mod\`ele de donn\'ees se fait par l'interm\'edaire d'une librairie m\'etier \'ecrite en Delphi (www.vigicultures.fr). Maintenance du site Web de l'entreprise (www.itbfr.org) et r\'ealisation d'utilitaires en Delphi (version 2007).
+\newline
+Administration du parc informatique compos\'e de 80 postes r\'epartis sur la France. Connaissance d'Active Directory et d'outils de d\'eploiement à distance et maintenance de la base de donn\'ees d'exp\'erimentation.
+}
+
+\cventry{Avr.--Ao\^ut 2008}{D\'eveloppeur}{groupe ISAGRI}{stage}{}{
+Conception et réalisation d’un module en Smalltalk pour un logiciel de gestion parcellaire, permettant de concevoir des bilans sur les apports et récoltes d’une parcelle de vigne sur une période donn\'ee.}
+
+\cventry{F\'ev.--Avr. 2007}{Charg\'e de documentation}{Mateurop}{stage}{}{
+Analyse et synth\`ese du fonctionnement de la partie automatis\'ee de la plus grosse unit\'e de production mondiale de malt en vue de son optimisation.}
+
+\cventry{Avr.--Juin. 2004}{D\'eveloppeur}{Zehnder Group SAS}{stage}{}{
+Ajout de fonctionnalit\'es au logiciel de r\'eduction des chutes de d\'ecoupes de tubes m\'etalliques et refonte de son interface en Visual Basic.}
+
+\subsection{Autres}
+\cventry{Et\'es 2001--2007}{Divers jobs \'etudiants}{Champagnes-C\'er\'eales}{}{}{
+Travaux saisonniers en milieu agricole. Conducteur de tracteur pour diff\'erentes exploitations agricoles et diverses activit\'es à Champagne Céréales.
+}
+
+\section{Comp\'etences}
+%\cvline{Logiciels}{\small Matlab, Labview, Visual Studio, phpMyadmin, Dreamweaver, MS Excel, MS Project, SQL Server}
+%\cvline{Langages}{\small C, C++, Bash, SQL, HTML/php, asp, Visual Basic}
+%\cvline{Analyse}{\small Merise, UML, SADT}
+\cvline{Web}{\small PHP, Ajax: Javascript--JSON -- Dojo -- XML--XSL-T, CSS, Ruby on Rails}
+\cvline{Client lourd}{\small Delphi 2007, SmallTalk, C++, Java}
+\cvline{Base de donn\'ees}{\small Firebird, SQL Server, MySQL}
+\cvline{M\'ethodologie}{\small Programmation Objet, UML, Design Patterns, M\'ethodes agiles(\small tests, cycle it\'eratif)}
+\cvline{Syst\`emes}{\small Windows, Linux, OS X}
+\cvline{Outils}{\small Subversion, Git, Eclipse, IIS, Apache}
+\cvline{Langues}{ Anglais: \small lu, \'ecrit, parl\'e, TOEIC:780 -- \normalsize Allemand: \small Notions}
+%Conduite de projets%Systèmes%Langues :%Gantt-Pert, Agile (RAD2)%Windows, Windows Mobile, Unix, OS X%Anglais : lu, écrit, parlé (TOEIC : 759) Allemand : notions
+
+
+\newpage{}
+
+%PAGE 2
+\section{Formation}
+\cventry{2006--2008}{Master Professionnel Sciences et Techniques de l'Information}{\newline{}Facult\'e des Sciences}{Reims}{}{  % arguments 3 to 6 can be left empty
+\begin{itemize}
+	\item 
+	\begin{itemize}
+		\item Conduite de projet et assurance qualit\'e: planification, m\'ethodes Agiles, 
+		\item Gestion d’entreprise, Management 
+		\item Conception des bases de donn\'ees relationnelles : m\'ethodologie MERISE, sch\'ema Entit\'e/Association, impl\'ementation sous Microsoft SQL Server 
+		\item Conception d’interfaces Homme-Machine et mise en application avec Visual Basic
+		\item Programmation Web 
+		\item Conception et programmation des syst\`emes embarqu\'es : développement pour Pocket PC (Visual Basic ) 
+		\item R\'ealisation d'un robot et participation \`a la coupe de France de robotique (30\textsuperscript{\`eme} sur 130)
+	\end{itemize}
+\end{itemize}}
+
+\cventry{2004--2006}{Licence G\'enie Electrique et Informatique industrielle}{Facult\'e des Sciences}{Reims}{}{
+\begin{itemize}
+	\item
+	\begin{itemize}
+		\item Programmation de microcontr\^oleur en C 
+		\item Electronique de puissance
+		\item Protection et s\'ecurit\'e \'electrique 
+		\item Simulation et analyse de circuit \'electroniques
+	\end{itemize}
+\end{itemize}
+}
+
+\cventry{2002--2004}{DUT Informatique de Gestion}{Institut Universitaire de Technologie}{Metz}{}{
+\begin{itemize}
+	\item
+	\begin{itemize}
+	\item Comptabilit\'e, économie, droits pour l’informatique 
+	\item Conception et maintenance des bases de donn\'ees relationnelles, impl\'ementation sous Informix 
+	\item Etudes des r\'eseaux informatiques 
+	\item Algorithmique et programmation
+	\item Prototypage d'un site de vente en ligne
+	\end{itemize}
+\end{itemize}}
+
+\cventry{2002}{Bac scientifique, option Sciences et Vie la terre}{Lyc\'ee Pierre Bayen}{Ch\^alons-en-Champagne}{}{}
+
+\section{Informations compl\'ementaires}
+\cvline{Activités}{musique(guitare), danse, jonglage}
+\cvline{Autres}{Permis B, propri\'etaire d'une voiture}
+
+\end{document}
+
+%\section{Languages}
+%\cvlanguage{Language 1}{Skill level}{Comment}
+%\cvlanguage{Language 2}{Skill level}{Comment}
+%\cvlanguage{Language 3}{Skill level}{Comment}
+
+%\section{Computer skills}
+%\cvcomputer{category 1}{XXX}{category 4}{XXX, YYY, ZZZ}
+%\cvcomputer{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%\cvcomputer{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+%
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+%
+%\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+%
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5 \cite{book1}}
+%\cvlistdoubleitem{Item 3}{}
